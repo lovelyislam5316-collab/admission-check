@@ -17,7 +17,7 @@ except Exception:
 
 for u in URLS:
     try:
-        text = requests.get(u, timeout=30).text
+        text = requests.get(u, timeout=600).text
         h = hashlib.md5(text.encode()).hexdigest()
         if u in state and state[u] != h:
             notify(f"পেজ বদলেছে, চেক করো:\n{u}")
