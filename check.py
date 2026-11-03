@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 URLS = [
     "https://cadetcollegeadmission.army.mil.bd/",
 ]
-SLOW_SECONDS = 8      # এর বেশি সময় লাগলে 🐢 মেসেজ
+SLOW_SECONDS = 3      # এর বেশি সময় লাগলে 🐢 মেসেজ
 FAIL_LIMIT = 2        # পরপর এতবার সমস্যা হলে তবেই সমস্যার মেসেজ
 KEYWORDS = ["সিট", "আসন", "ফাঁকা", "খালি", "vacant", "seat",
             "available", "waiting", "ভর্তি", "নোটিশ", "notice", "admission"]
